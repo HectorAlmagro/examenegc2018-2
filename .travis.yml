@@ -1,0 +1,22 @@
+sudo: required
+language: java
+java:
+- 7.0
+- 8.0
+jdk:
+- oraclejdk9
+- openjdk8
+addons:
+  apt:
+    packages:
+    - oracle-java8-installer
+notifications:
+  email:
+  - jpaglez@gmail.com
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZE7nc29yg8fdaYC/OC8mPeZRffXw59PKLXnLuBioStAb3jGmpy+0R5SUS5SD7Zr7QIWiQIV+gEWufWGmg5gv9Hdd4E41qL8SXafLg8HBoL0CaJW5KqgP6bW5n08REM8klSlh1+N/uCEvxqRjW0s3BtLdpE+TXGPCdVsZF8EfrCuTG5DqwFmIzLWlwq6Saxn1OOcZoeQgvTVZXRw64TMjRfpufFMN/l/ys+TJjvxAd2reaP2RBsIlwi5u0exr/tNS+O8Y7RfhRjf4XYTl/cM08pa1/6pv9X4s/Du5H0BUKpW25CvaB5AmuZQ9ph5LxNMRRrlAuiGL8r/zOZuww8gUZOeHCcF6V7EZ0arvO9zzBdkH6Wxyaqe/+5v77ELKy41ChRdfRLtVh2XbHeC4py/whKPpc++nDObfY5UJEX5lyv8Y/nHfqIgdsOW3tYeT2T4cBj2cjiXO74vgNzQFUDWvRYDUecpMg/qFuye1lw23wWVypYBe1Dhj+FJm//uVTaNPEKEA7JtLFkstQw9S/8DaecXMtA4O/HciuN2aaZDvKock4FnRI3CJrIVgj3s76TvRYWC0gxP5OFNhYXDtQjF+y1SjoQnAbMO2qx/FHJYKV+/YIMrAa/0LZGzK5S7dBiWMc8uCEh5O8RkoIieemErRITX4uD9uvmti0g6mukT9EOs=
+  app: bye-java-juanpag94
+  on:
+    repo: JuanpaG94/bye-java
